@@ -26,8 +26,71 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.bg-gradient-custom {
+    background: linear-gradient(270deg, rgba(0,0,0,0) 30%, rgba(88,28,135,1) 30%);
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 1872px;
+}
+.bg-gradient-sobre {
+  background: linear-gradient(75deg, rgba(0,0,0,0) 10%, rgba(88,28,135,1) 100%);
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 1872px;
+}
+.bg-gradient-qualidade {
+  background: linear-gradient(105deg, rgba(0,0,0,0) 50%, rgba(88,28,135,1) 0%);
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 1872px;
+}
+.bg-gradient-formacao {
+  background: linear-gradient(300deg, rgba(0,0,0,0) 10%, rgba(88,28,135,1) 100%);
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 1872px;
+} 
+.bg-contato {
+  background-color: rgba(88,28,135,1);
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 1872px;
+} 
+.bg-projetos {
+  background-image: url("../../public/fundo-faixa.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 1872px;
+}
+.link-wrapper .link-underline {
+  position: relative;
+  width: 100%;
+  height: var(--border);
+  margin-bottom: 6px;
+  bottom: 0;
+  left: 0;
+  background-color: #606887;
+  transform-origin: bottom right;
+  transition: transform .25s ease-out;
+}
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.custom-list {
+  list-style-position: inside;
+}
+.custom-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-list li::before {
+  content: "•"; /* Pode ser alterado para outros símbolos ou imagens */
+  margin-left: 10px; /* Ajuste conforme necessário */
 }

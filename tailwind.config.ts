@@ -8,11 +8,30 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        slidein: {
+          from: {
+            opacity: "0",
+            transform: "translateY(-10px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      container: {
+        center:true,
+      },
+      animation: {
+        'spin': 'spin 10s linear infinite ',
+        'slidein': "slidein 1s ease var(--slidein-delay, 0) forwards",
+      }
     },
   },
   plugins: [],
