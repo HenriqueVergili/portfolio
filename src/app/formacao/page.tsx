@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
           <p className='text-7xl font-bold mt-16 animate-slidein opacity-0 [--slidein-delay:1000ms]'>Licenças e Certificados</p>
         </div>
         <div className='mt-20 ml-[320px] list-disc'>
-          <li className='text-4xl text-left mt-4 animate-slidein opacity-0 [--slidein-delay:1500ms]'>Certificado de Inglês Cambridge English Level 1 Certificate in ESOL Internetional (First)</li>
+          <li className='text-4xl text-left mt-4 animate-slidein opacity-0 [--slidein-delay:1500ms]'>Certificado de Inglês Cambridge</li>
           <p className='text-2xl mt-4 text-left ml-20 animate-slidein opacity-0 [--slidein-delay:1500ms]'>Nível C2, conquistado em 2018</p>
         </div>
       </div>

@@ -74,7 +74,175 @@ body {
   transition: transform .25s ease-out;
 }
 
+.glow-overlay {
+  --glow-size: 25rem;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: var(--glow-opacity, 0);
+  mask: radial-gradient(
+    var(--glow-size) var(--glow-size) at var(--glow-x) var(--glow-y),
+    var(--glow-color) 1%,
+    transparent 50%
+  );
+  transition: 400ms mask ease;
+  will-change: mask;
+}
 
+@keyframes flash {
+  0%,50%,to {
+      opacity: 1
+  }
+
+  25%,75% {
+      opacity: 0
+  }
+}
+
+.animate-\[flash_0\.7s\] {
+  animation: flash .7s
+}
+
+@keyframes fly-in-down {
+  0% {
+      opacity: 0;
+      transform: translate3d(0,-1500px,0);
+      transition-timing-function: cubic-bezier(.215,.61,.355,1)
+  }
+
+  60% {
+      opacity: 1;
+      transform: translate3d(0,25px,0)
+  }
+
+  75% {
+      transform: translate3d(0,-10px,0)
+  }
+
+  90% {
+      transform: translate3d(0,5px,0)
+  }
+
+  to {
+      transform: none
+  }
+}
+@keyframes fly-in-left {
+  0% {
+      opacity: 0;
+      transform: translate3d(1500px,0,0);
+      transition-timing-function: cubic-bezier(.215,.61,.355,1)
+  }
+
+  60% {
+      opacity: 1;
+      transform: translate3d(-25px,0,0)
+  }
+
+  75% {
+      transform: translate3d(10px,0,0)
+  }
+
+  90% {
+      transform: translate3d(-5px,0,0)
+  }
+
+  to {
+      transform: none
+  }
+}
+@keyframes fly-in-right {
+  0% {
+      opacity: 0;
+      transform: translate3d(-1500px,0,0);
+      transition-timing-function: cubic-bezier(.215,.61,.355,1)
+  }
+
+  60% {
+      opacity: 1;
+      transform: translate3d(25px,0,0)
+  }
+
+  75% {
+      transform: translate3d(-10px,0,0)
+  }
+
+  90% {
+      transform: translate3d(5px,0,0)
+  }
+
+  to {
+      transform: none
+  }
+}
+
+@keyframes tada {
+  0% {
+      transform: scaleX(1)
+  }
+
+  10%,20% {
+      transform: scale3d(.9,.9,.9)rotate(-3deg)
+  }
+
+  30%,50%,70%,90% {
+      transform: scale3d(1.1,1.1,1.1)rotate(3deg)
+  }
+
+  40%,60%,80% {
+      transform: scale3d(1.1,1.1,1.1)rotate(-3deg)
+  }
+
+  to {
+      transform: scaleX(1)
+  }
+}
+
+@keyframes drop-in {
+  0% {
+      opacity: 0;
+      transform: scale(0);
+      animation-timing-function: cubic-bezier(.34,1.61,.7,1)
+  }
+
+  to {
+      opacity: 1;
+      transform: scale(1)
+  }
+}
+
+
+.animate-\[spinner-grow_0\.75s_linear_infinite\] {
+  animation: spinner-grow .75s linear infinite
+}
+
+@keyframes spinner-grow {
+  0% {
+      transform: scale(0)
+  }
+
+  50% {
+      transform: none;
+      opacity: 1
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+      opacity: 0;
+      transform: translate3d(100%,0,0)
+  }
+
+  to {
+      opacity: 1;
+      transform: translateZ(0)
+  }
+}
+
+.animate-\[fade-in-right_1s_ease-in-out\] {
+  animation: fade-in-right 1s ease-in-out
+}
 
 @layer utilities {
   .text-balance {

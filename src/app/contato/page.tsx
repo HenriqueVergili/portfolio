@@ -9,16 +9,18 @@ const HomePage: React.FC = () => {
       <div className=''>
       <div className='flex justify-between mt-36 mr-10 p-44 [text-shadow:_3px_5px_0_rgb(0_0_0_/_50%)]'>
           <div>
-            <p className='text-white text-4xl font-medium mt-7'>Caso queira trabalhar comigo</p>
-            <p className='text-white text-6xl font-bold'>Envie uma mensagem</p>
+            <p className='text-white text-4xl font-medium mt-7 animate-[fly-in-down_1.3s_ease-in-out]'>Caso queira trabalhar comigo</p>
+            <p className='text-white text-6xl font-bold animate-[fly-in-down_1s_ease-in-out]' >Envie uma mensagem</p>
           </div>
-          <div>
-        <p className="text-xl text-terra font-medium mb-2 mt-[60px]">Email</p>
+          <div className=''>
+        <p className="text-xl text-terra font-medium mb-2 mt-[60px] animate-[fly-in-down_1.5s_ease-in-out]">Email</p>
+        <div className=' animate-[fly-in-down_1.3s_ease-in-out]'>
         <a href='mailto:henrique.vergili@hotmail.com'className='hover:text-blue-500 font-normal text-2xl text-white'>henrique.vergili@hotmail.com</a>
+        </div>
       </div>
       <div>
-        <p className="text-xl text-terra font-medium mb-2 ">Redes Sociais</p>
-        <div className='flex'>
+        <p className="text-xl text-terra font-medium mb-2 animate-[fly-in-down_1.3s_ease-in-out] ">Redes Sociais</p>
+        <div className='flex animate-[fly-in-down_1.3s_ease-in-out]'>
         <span className="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
         <path
@@ -27,7 +29,7 @@ const HomePage: React.FC = () => {
         </span>
         <a href="https://www.instagram.com/henrique.vergili/" target="_blank" className="hover:text-pink-500 ml-1 text-white text-ms hover:underline focus:t focus:underline">Instagram</a>
         </div>
-        <div className='flex mt-1'>
+        <div className='flex mt-1 animate-[fly-in-down_1.5s_ease-in-out]'>
         <span className="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#128c7e]">
         <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +42,7 @@ const HomePage: React.FC = () => {
 
         <a href="https://wa.me/15996639991" target="_blank" className="hover:text-green-300 ml-1 text-white text-ms hover:underline focus:t focus:underline mt-1">Whatsapp</a>
         </div>
-        <div className='flex mt-1'>
+        <div className='flex mt-1 animate-[fly-in-down_1.7s_ease-in-out]'>
         <span className="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#0077b5]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path

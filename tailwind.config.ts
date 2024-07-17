@@ -7,6 +7,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    safelist: ['animate-[fly-in-right_1s_ease-in-out]'],
     extend: {
       keyframes: {
         slidein: {

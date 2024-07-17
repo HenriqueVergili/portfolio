@@ -12,13 +12,15 @@ const HomePage: React.FC = () => {
       <div className=''>
         <div className='ml-[210px] mt-20 flex'>
           <div className='ml-24'>
-            <h1 className='text-7xl text-center'> Quem sou Eu?</h1>
+            <h1 className='text-7xl text-center animate-[fly-in-right_1.3s_ease-in-out]'> Quem sou Eu?</h1>
             <hr className="head-separator"></hr>
-            <p className='text-medium text-3xl w-[700px] mt-2'> Meu nome é Henrique Vergili, e sou desenvolvedor focado em front-end mobile e web! <br></br>
-            Meu interesse em programação começou na pandemia, onde deicidi trancar minha faculdade de Direito e ingressar na PUC CAMPINAS em Engenharia de Software.
-            Também sou apaixonado em música e em aprender instrumentos musicais! </p>
+            <div>
+            <p className='text-medium text-3xl w-[700px] mt-2 animate-[fly-in-left_1s_ease-in-out]'> Meu nome é Henrique Vergili, e sou desenvolvedor focado em front-end mobile e web!</p>
+            <p className='text-medium text-3xl w-[700px] mt-2 animate-[fly-in-right_1.3s_ease-in-out]'>Meu interesse em programação começou na pandemia, onde deicidi trancar minha faculdade de Direito e ingressar na PUC CAMPINAS em Engenharia de Software.</p>
+            <p className='text-medium text-3xl w-[700px] mt-2 animate-[fly-in-left_1.5s_ease-in-out]'> Também sou apaixonado em música e em aprender instrumentos musicais! </p>
+            </div>
             <div className='flex mt-10'>
-            <a href="/Curriculo.pdf" className='text-4xl text-left hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0' target="_blank">↓  curriculo</a>
+            <a href="/Curriculo.pdf" className='text-4xl text-left hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-[1px] before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0 animate-[tada_1s_ease-in-out_infinite]' target="_blank">↓  curriculo</a>
             </div>
           </div>
         <div>
