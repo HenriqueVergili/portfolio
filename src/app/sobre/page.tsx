@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
         <div>
-          <div>
+          <div className='animate-[fade-in_0.5s_ease-in-out]'>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 111.452 111.542" 
@@ -77,7 +77,7 @@ const HomePage: React.FC = () => {
           </path>
             </svg>
             <a href='https://open.spotify.com/intl-pt/track/44mkUovCUkI5Pbx5Zu27sg' target='__blank'>
-              <div className='group bg-green-300 rounded-full w-[140px] mb-[-100px] ml-[180px] mt-[-55px] relative z-30'>
+              <div className='group bg-green-300 rounded-full w-[140px] mb-[-100px] ml-[180px] mt-[-55px] relative z-30 '>
                 <img src='/polyphia.jpg' className='w-[140px] rounded-full relative z-40 ' />
                 <div className="absolute rounded-full text-2xl space-y-2 inset-0 flex flex-col items-center justify-center text-white z-40 font-bold opacity-0 hover:opacity-100 bg-black bg-opacity-80 transition-opacity duration-300 ease-in-out z-30">
                   <span>Polyphia</span>
@@ -86,7 +86,7 @@ const HomePage: React.FC = () => {
               </div>
             </a>
           </div>
-          <img src='/eu.jpg' className='rounded-lg ml-64 skew-x-1 -scale-x-100 w-[500px]'></img>
+          <img src='/eu.jpg' className='rounded-lg ml-64 skew-x-1 -scale-x-100 w-[500px] animate-[fade-in_1.8s_ease-in-out]'></img>
         </div>
         </div>
       </div>
