@@ -5,7 +5,7 @@ import Header from '../components/header';
 
 const HomePage: React.FC = () => {
   return (
-    <div className='container bg-projetos'>
+    <div className='container bg-projetos1'>
       <Header/>
       <div className='text-center mt-44'>
         <div>
