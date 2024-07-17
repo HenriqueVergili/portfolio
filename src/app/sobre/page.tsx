@@ -86,7 +86,7 @@ const HomePage: React.FC = () => {
               </div>
             </a>
           </div>
-          <img src='/eu.jpg' className='rounded-lg ml-64 skew-x-1 -scale-x-100 w-[500px] animate-[fade-in_1.8s_ease-in-out]'></img>
+          <img src='/selfie.jpg' className='rounded-lg ml-64 skew-x-1 w-[450px] animate-[fade-in_1.8s_ease-in-out]'></img>
         </div>
         </div>
       </div>
