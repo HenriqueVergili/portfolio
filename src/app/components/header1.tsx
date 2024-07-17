@@ -7,7 +7,7 @@ const Header1: React.FC = () => {
     <>
 <header className="flex justify-between items-center p-2 z-40">
 <div className='flex'>
-  <a href="/"className="text-5xl p-10 font-pandora ml-[40px] [text-shadow:_-5px_4px_0_rgb(0_0_0_/_40%)]">Henrique Vergili</a>
+  <a href="/"className="text-5xl p-10 font-pandora ml-[40px] [text-shadow:_-5px_4px_0_rgb(0_0_0_/_50%)]">Henrique Vergili</a>
   </div>
 <nav>
   <ul className="text-2xl mr-24 flex space-x-4">
@@ -38,7 +38,7 @@ const Header1: React.FC = () => {
     </a>
   </li>
   <li>
-    <a href=" https://wa.me/5515996639991">
+    <a href=" https://wa.me/5515996639991" target='_blank'>
       <span className="[&>svg]:h-10 [&>svg]:w-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
